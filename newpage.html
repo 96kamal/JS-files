@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="nav1"></p>
+    <p id="nav2"></p>
+    <p id="nav3"></p>
+    <button onclick="func1()">click1</button>
+    <button onclick="func2()">click</button>
+    <script>
+function func1()
+{
+    let name=navigator.appName;
+    document.getElementById("nav1").innerHTML=name;
+}
+function func2()
+{
+    document.getElementById("nav2").innerHTML=screen.availHeight;
+    document.getElementById("nav3").innerHTML=screen.availWidth;
+}
+    </script>
+</body>
+</html>
